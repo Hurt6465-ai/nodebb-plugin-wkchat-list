@@ -1,0 +1,18 @@
+{
+  "name": "nodebb-plugin-wkchat-list",
+  "version": "19.10.6-safe1",
+  "description": "Wukong bridge conversation list for NodeBB chats, packaged as a NodeBB plugin.",
+  "main": "library.js",
+  "license": "MIT",
+  "keywords": [
+    "nodebb",
+    "nodebb-plugin",
+    "wukongim",
+    "chat",
+    "conversation"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {}
+}
