@@ -1,0 +1,36 @@
+{
+  "id": "nodebb-plugin-wkchat-list",
+  "name": "WKChat List",
+  "description": "Replace NodeBB chat conversation list with Wukong bridge conversation sync data.",
+  "url": "https://github.com/Hurt6465-ai/nodebb-plugin-wkchat-list",
+  "library": "./library.js",
+  "hooks": [
+    {
+      "hook": "static:app.load",
+      "method": "init"
+    },
+    {
+      "hook": "filter:admin.header.build",
+      "method": "addAdminNavigation"
+    }
+  ],
+  "scripts": [
+    "public/src/client.js"
+  ],
+  "acpScripts": [
+    "public/src/admin.js"
+  ],
+  "modules": {
+    "../admin/plugins/wkchat-list.js": "./public/src/admin.js"
+  },
+  "scss": [
+    "scss/client.scss",
+    "scss/admin.scss"
+  ],
+  "staticDirs": {
+    "public": "public"
+  },
+  "templates": "templates",
+  "languages": "languages",
+  "defaultLang": "zh-CN"
+}
